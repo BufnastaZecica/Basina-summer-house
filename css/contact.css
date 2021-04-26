@@ -1,0 +1,101 @@
+body{
+background-image: radial-gradient(mintcream 0%, lightgray 100%);
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+    min-height: 100px;
+    margin-top: 13% ;
+}
+#contact{
+  margin: 5% 0;
+}
+#info{
+  margin-top: 5%;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+footer>a{
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+
+
+
+
+
+@media (max-width:767px) {
+  #info{
+    text-align: center;
+    margin-bottom: 7%;
+  }
+  #map{
+    height: 50vh;
+    margin-top: 20%;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  .container>.navbar-header{
+    margin-left: 30px;
+  }
+  .navbar-nav{
+    float: right;
+    width: 45%;
+  }
+  .navbar-nav>li{
+    width: 30%;
+    text-align: center;
+  }
+  
+  @media (min-width: 992px) {
+   ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
